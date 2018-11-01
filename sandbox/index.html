@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head><title>Sandbox | Argdown</title><meta name=description content="Try out Argdown in your browser"><link rel="shortcut icon" type=image/x-icon href=https://argdown.org/favicon.ico><base href=/sandbox/ ><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><script>// Single Page Apps for GitHub Pages
+    // https://github.com/rafrex/spa-github-pages
+    // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+    // ----------------------------------------------------------------------
+    // This script checks to see if a redirect is present in the query string
+    // and converts it back into the correct url and adds it to the
+    // browser's history using window.history.replaceState(...),
+    // which won't cause the browser to attempt to load the new url.
+    // When the single page app is loaded further down in this file,
+    // the correct url will be waiting in the browser's history for
+    // the single page app to route accordingly.
+    (function (l) {
+      if (l.search) {
+        var q = {};
+        l.search.slice(2).split('&').forEach(function (v) {
+          var a = v.split('=');
+          q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+        });
+        if (q.p !== undefined) {
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + (q.p || '') +
+            (q.q ? ('?' + q.q) : '') +
+            l.hash
+          );
+        }
+      }
+    }(window.location))</script><link rel="shortcut icon" href=/sandbox/favicon.ico><title>argdown</title><link as=style href=/sandbox/css/app.8a7c5776.css rel=preload><link as=style href=/sandbox/css/chunk-vendors.e5a585e2.css rel=preload><link as=script href=/sandbox/js/app.2373ae43.js rel=preload><link as=script href=/sandbox/js/chunk-vendors.1d23f6fb.js rel=preload><link href=/sandbox/css/1.0fb0cfaa.css rel=prefetch><link href=/sandbox/css/2.98188b49.css rel=prefetch><link href=/sandbox/js/0.1a893ad2.js rel=prefetch><link href=/sandbox/js/1.89b627ff.js rel=prefetch><link href=/sandbox/js/2.bdd644c3.js rel=prefetch><link href=/sandbox/css/chunk-vendors.e5a585e2.css rel=stylesheet><link href=/sandbox/css/app.8a7c5776.css rel=stylesheet></head><body><noscript><strong>Argdown Sandbox is a browser-based editor for the Argdown argumentation syntax. Please enable JavaScript to continue.</strong></noscript><div id=app></div><script src=/sandbox/js/chunk-vendors.1d23f6fb.js></script><script src=/sandbox/js/app.2373ae43.js></script></body></html>
